@@ -1,10 +1,16 @@
 // main entry
-const express = require("express");
-const path = require("path");
-const postRoutes = require("./routes/posts");
-const app = express();
+import express from 'express';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import postRoutes from './routes/posts.js';
 
-const expressLayouts = require("express-ejs-layouts");
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
+
+const app = express();
+const PORT = 3000;
+
+import expressLayouts from 'express-ejs-layouts';
 app.use(expressLayouts);
 
 // Setting EJS as Our view engine
@@ -23,6 +29,8 @@ app.get('/', (req, res) =>{
 });
 
 // Setting up our server
-const PORT = 3000;
-app.listen(PORT, () =>
-console.log("Congrats, Server running on http://localhost:3000"));
+
+app.listen(PORT, () =>{
+    console.log(`Congrats, Server running at http://localhost:${PORT}`);
+
+});
