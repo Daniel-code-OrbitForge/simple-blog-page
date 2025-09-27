@@ -4,6 +4,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 
+const { format } = require('date-fns');
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const postsFile = path.join(__dirname, '.posts.js')//
 
