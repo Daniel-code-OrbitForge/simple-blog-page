@@ -8,7 +8,8 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 
 const app = express();
-const PORT = 3000;
+// Setting up our PORT variable
+const PORT = process.env.PORT || 3000;
 
 import expressLayouts from 'express-ejs-layouts';
 app.use(expressLayouts);

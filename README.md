@@ -36,7 +36,7 @@ simple-blog-page/ | |--- posts.json            # blog posts data (JSON, no DB)
 
 1. **Clone the repo:**
    ```bash
-   git clone https://github.com/Daniel-code-OrbitForge/simple-blog-express.git
+   git clone https://github.com/Daniel-code-OrbitForge/simple-blog-page.git
    cd simple-blog-page
 
 2. **Install dependencies:**

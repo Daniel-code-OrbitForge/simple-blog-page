@@ -12,6 +12,7 @@
   "author": "Group Three/Backend Dev. Cohort 3",
   "license": "ISC",
   "dependencies": {
+    "date-fns": "^4.1.0",
     "ejs": "^3.1.10",
     "express": "^5.1.0",
     "express-ejs-layouts": "^2.5.1"
