@@ -20,7 +20,7 @@
         "date":"27-09-2025",
         "content": "Third party modules are a great way to extend the functionality of your Express applications..."
     },
-    {
+        {
         "id": 4,
         "title": "Modules and Middleware in ExpressJs",
         "author":"Olukayode Feyi",
@@ -48,5 +48,6 @@
         "date":"27-09-2025",
         "content": "ES6 introduced several new features that make JavaScript more powerful and easier to work with..."
     }
+
     
 ]
