@@ -47,7 +47,7 @@ simple-blog-page/ | |--- posts.json            # blog posts data (JSON, no DB)
    ```bash
    node app.js
    (or using nodemon):
-   npx nodemon app.js
+   npm run start
 
 4. **Open in browser:**
 - http://localhost:3000/posts --> all posts
