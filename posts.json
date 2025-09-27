@@ -12,5 +12,12 @@
         "author":"Harrison Daniel",
         "date":"25-09-2025",
         "content": "EJS lets you embed Javascript into HTML for dynamic rendering..."
+    },
+    {
+        "id": 3,
+        "title": "ExpressJs and Third-party Modules",
+        "author":"Olukayode Feyi",
+        "date":"27-09-2025",
+        "content": "Third party modules are a great way to extend the functionality of your Express applications..."
     }
 ]
