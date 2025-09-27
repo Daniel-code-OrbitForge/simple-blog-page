@@ -40,5 +40,13 @@
         "author":"Olukayode Feyi",
         "date":"27-09-2025",
         "content": "Web APIs are a crucial part of modern web applications, allowing for seamless communication between different services..."
+    },
+    {
+        "id": 7,
+        "title": "New Features in ES6",
+        "author":"Olukayode Feyi",
+        "date":"27-09-2025",
+        "content": "ES6 introduced several new features that make JavaScript more powerful and easier to work with..."
     }
+    
 ]
