@@ -10,6 +10,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
 // Setting up our PORT variable
 const PORT = process.env.PORT || 3000;
+const hostName = '127.0.0.1';
 
 import expressLayouts from 'express-ejs-layouts';
 app.use(expressLayouts);
@@ -24,6 +25,10 @@ app.use(express.static(path.join(__dirname, "public")));
 // Setting up our ROUTER === Routes ===
 app.use("/posts", postRoutes);
 
+// Rendering the Home page view
+app.get('/', function(req, res){
+    res.render("home");
+});
 // Home redirect
 app.get('/', (req, res) =>{
     res.redirect("/posts");
@@ -32,6 +37,6 @@ app.get('/', (req, res) =>{
 // Setting up our server
 
 app.listen(PORT, () =>{
-    console.log(`Congrats, Server running at http://localhost:${PORT}`);
+    console.log(`Congrats, Server running at http://${hostName}:${PORT}/`);
 
 });
