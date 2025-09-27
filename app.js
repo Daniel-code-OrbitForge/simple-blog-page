@@ -29,7 +29,6 @@ app.use("/posts", postRoutes);
 app.get('/', function(req, res){
     res.render("home");
 });
-
 // Home redirect
 app.get('/', (req, res) =>{
     res.redirect("/posts");
@@ -38,6 +37,6 @@ app.get('/', (req, res) =>{
 // Setting up our server
 
 app.listen(PORT, () =>{
-    console.log(`Congrats, Server running at http://localhost:${PORT}`);
+    console.log(`Congrats, Server running at http://${hostName}:${PORT}/`);
 
 });
