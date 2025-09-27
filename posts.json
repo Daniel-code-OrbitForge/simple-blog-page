@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "title": "First Blog post | Getting started with JSON/ Express",
+        "author": "Harrison Daniel",
+        "date": "26-09-2025",
+        "content": "Express makes building web-applications very simple and fun..."
+    },
+    {
+        "id": 2,
+        "title": "Understanding EJS Templates",
+        "author":"Harrison Daniel",
+        "date":"25-09-2025",
+        "content": "EJS lets you embed Javascript into HTML for dynamic rendering..."
+    }
+]
