@@ -1,13 +1,15 @@
 {
   "name": "simple-blog-page",
   "version": "1.0.0",
-  "description": "",
+  "description": "creating a simple blog page using express and ejs",
   "main": "app.js",
+  "type": "module",
   "scripts": {
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Group Three/Backend Dev. Cohort 3",
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.10",
@@ -16,5 +18,13 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daniel-code-OrbitForge/simple-blog-page.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Daniel-code-OrbitForge/simple-blog-page/issues"
+  },
+  "homepage": "https://github.com/Daniel-code-OrbitForge/simple-blog-page#readme"
 }
