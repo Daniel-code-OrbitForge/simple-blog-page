@@ -1,5 +1,6 @@
 #.gitignore file**
 node_modules
+date-fns
 npm-debug.log
 npm-error.log
 yarn-error.log
