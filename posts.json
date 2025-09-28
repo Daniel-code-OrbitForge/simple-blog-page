@@ -12,5 +12,14 @@
         "author":"Harrison Daniel",
         "date":"25-09-2025",
         "content": "EJS lets you embed Javascript into HTML for dynamic rendering..."
+        
+    },
+
+    {
+        "id": 8,
+        "title": "Setting up Middleware in Express",
+        "author": "Odidika Somto Anthony",
+        "date":"27-09-2025",
+        "content": "Middleware functions are functions that have access to the request object..."
     }
 ]
