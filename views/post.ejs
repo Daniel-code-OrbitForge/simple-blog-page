@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= post.title %></title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1>Simple Blog</h1>
+    <nav><a href="/posts">All Posts</a></nav>
+  </header>
+
+  <main>
+    <article>
+      <h2><%= post.title %></h2>
+      <p><small>By  <%= post.author %> on <%= post.date %></small></p>
+      <p><%= post.content %></p>
+    </article>
+    <a href="/posts"> Back to Posts</a>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Simple Blog Project</p>
+  </footer>
+</body>
+</html>
