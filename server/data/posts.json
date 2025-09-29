@@ -1,42 +1,81 @@
 [
-	{
-		"id": 2,
-		"title": "Building A Blog On ExpressJs",
-		"body": "Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications. It is designed for building web applications and APIs, and it is known for its simplicity, performance, and scalability. Express allows developers to create server-side applications quickly and easily by providing a set of middleware functions that can be used to handle HTTP requests and responses. It also supports routing, templating engines, and various other features that make it a popular choice for building web applications with Node.js.",
-		"author": "Feyi",
-		"createdAt": "2025-29-01T12:00:00Z",
-		"updatedAt": ""
-	},
-	{
-		"id": 3,
-		"title": "Getting Started With Node.js",
-		"body": "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. It allows developers to use JavaScript to write server-side code, enabling the development of scalable and high-performance web applications. Node.js uses an event-driven, non-blocking I/O model, making it lightweight and efficient. It also has a rich ecosystem of libraries and frameworks, such as Express.js, that simplify the development process.",
-		"author": "Feyi",
-		"createdAt": "2025-29-01T12:00:00Z",
-		"updatedAt": ""
-	},
-	{
-		"id": 4,
-		"title": "Building RESTful APIs with Node.js and Express",
-		"body": "Building RESTful APIs with Node.js and Express involves creating a server that can handle HTTP requests and responses. Express provides a simple and intuitive way to define routes and middleware for your API. You can use various HTTP methods (GET, POST, PUT, DELETE) to interact with your API endpoints. Additionally, you can use middleware to handle tasks such as authentication, validation, and error handling.",
-		"author": "Feyi",
-		"createdAt": "2025-29-01T12:00:00Z",
-		"updatedAt": ""
-	},
-	{
-		"id": 5,
-		"title": "Using Middleware in Express.js",
-		"body": "Middleware in Express.js is a function that has access to the request object (req), the response object (res), and the next middleware function in the application’s request-response cycle. It can perform various tasks such as logging, authentication, and error handling. Middleware functions can be added to the request handling pipeline using the app.use() method.",
-		"author": "Feyi",
-		"createdAt": "2025-29-01T12:00:00Z",
-		"updatedAt": ""
-	},
-	{
-		"id": 6,
-		"title": "Error Handling in Express.js",
-		"body": "Error handling in Express.js is a crucial aspect of building robust applications. Express provides a built-in error handling middleware that can be used to catch and process errors that occur during the request-response cycle. You can define custom error handling middleware by adding a middleware function with four arguments: (err, req, res, next). This function can be used to log the error, send an error response to the client, or perform any other error handling logic.",
-		"author": "Feyi",
-		"createdAt": "2025-29-01T12:00:00Z",
-		"updatedAt": ""
-	}
+    {
+        "id": 1,
+        "title": "Setting up Middleware in Express",
+        "author": "Odidika Somto Anthony",
+        "date":"02-10-2025",
+        "content": "Middleware functions are functions that have access to the request object.."
+    },
+
+    {
+        "id": 2,
+        "title": "Routing in Express",
+        "author": "Olukayode Feyisike Pelumi",
+        "date":"29-09-2025",
+        "content": "Routing refers to how an application’s endpoints (URIs) respond to client requests.."
+    },
+
+    {
+        "id": 3,
+        "title": "Using Template Engines with Express",
+        "author": "Francis Egbuleze",
+        "date":"29-09-2025",
+        "content": "Template engines allow you to use static template files in your application.."
+    },
+
+    {
+        "id": 4,
+        "title": "Serving Static Files in Express",
+        "author": "Frederick Baafi",
+        "date":"30-09-2025",
+        "content": "Express makes it easy to serve static files such as images, CSS files, and JavaScript files.."
+    },
+
+    {
+        "id": 5,
+        "title": "Working with Databases in Express",
+        "author": "Harrison Daniel Chinomso",
+        "date":"01-10-2025",
+        "content": "Integrating a database into your Express application allows you to store and retrieve data..."
+    },
+
+    {
+        "id": 6,
+        "title": "Authentication and Authorization in Express",
+        "author": "Onigbinde Joshua Oluwafenwa",
+        "date":"02-10-2025",
+        "content": "Implementing authentication and authorization is crucial for securing your application..."
+    },
+
+    {
+        "id": 7,
+        "title": "Deploying Express Applications",
+        "author": "Agu Michael Uche",
+        "date":"29-09-2025",
+        "content": "Once your Express application is ready, the next step is to deploy it to a server..."
+    },
+
+    {
+        "id": 8,
+        "title": "Performance Optimization in Express",
+        "author": "Omijori Muiz Ayomide",
+        "date":"29-09-2025",
+        "content": "Optimizing the performance of your Express application can lead to faster response times..."
+    },
+
+    {
+        "id": 9,
+        "title": "Testing Express Applications",
+        "author": "Mungathia Nancy Karimi",
+        "date":"29-09-2025",
+        "content": "Testing is an essential part of the development process to ensure your application works as expected..."
+    },
+
+    {
+        "id": 10,
+        "title": "Securing Express Applications",
+        "author": "Elimuyah Odinekachukwu",
+        "date":"29-09-2025",
+        "content": "Security is a critical aspect of web application development.."
+    }
 ]
