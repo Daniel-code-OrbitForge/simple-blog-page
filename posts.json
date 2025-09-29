@@ -1,4 +1,5 @@
 [
+
   {
     "id": 1,
     "title": "First Blog post | Getting started with JSON/ Express",
@@ -69,4 +70,5 @@
     "date": "25-09-2025",
     "content": "In JavaScript, a Promise is simply a way to deal with tasks that take time, like fetching data from an API or reading a file. Instead of blocking your code while waiting, a Promise says: I’ll get back to you with the result.A Promise can be in three states: pending (still waiting), fulfilled (success), or rejected (error). You use .then() to handle success and .catch() for errors.The beauty of Promises is that they make asynchronous code cleaner, easier to read, and they work perfectly with async/await."
   }
+
 ]

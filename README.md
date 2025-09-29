@@ -36,7 +36,7 @@ simple-blog-page/ | |--- posts.json            # blog posts data (JSON, no DB)
 
 1. **Clone the repo:**
    ```bash
-   git clone https://github.com/Daniel-code-OrbitForge/simple-blog-express.git
+   git clone https://github.com/Daniel-code-OrbitForge/simple-blog-page.git
    cd simple-blog-page
 
 2. **Install dependencies:**
@@ -47,7 +47,7 @@ simple-blog-page/ | |--- posts.json            # blog posts data (JSON, no DB)
    ```bash
    node app.js
    (or using nodemon):
-   npx nodemon app.js
+   npm run start
 
 4. **Open in browser:**
 - http://localhost:3000/posts --> all posts
