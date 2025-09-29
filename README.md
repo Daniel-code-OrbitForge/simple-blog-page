@@ -1,12 +1,14 @@
 ## Simple Blog Page (Express + EJS)
+
 # Group Three
 
-A simple blog project built with *Express.js* and *EJS templates*, using a JSON file as the data source (no database).  
+A simple blog project built with _Express.js_ and _EJS templates_, using a JSON file as the data source (no database).  
 This project is for learning Express routing, EJS rendering, modular code structure, and GitHub collaboration.
 
 ---
 
 ## Features
+
 - Display all posts from posts.json (/posts route)
 - View a single post by ID (/posts/:id)
 - EJS templates for dynamic rendering
@@ -18,38 +20,80 @@ This project is for learning Express routing, EJS rendering, modular code struct
 
 ## Project Structure
 
-simple-blog-page/ | |--- posts.json            # blog posts data (JSON, no DB) 
-|--- app.js                                    # main Express server 
-|--- routes/                                   # routes folder    
-|    |--- posts.js                             # /posts and /posts/:id routes 
-├── views/                                     # EJS templates  
-     |--- posts.ejs                            # all posts view    
-     |--- post.ejs                             # single post view 
-|--- public/                                   # static files (CSS, images)    
-     |--- style.css 
-|--- package.json 
-|--- README.md
+Simple-blog-page/
+│
+├── server/
+│ ├── models/
+│ │ └── postModel.js # Handles JSON CRUD operations
+│ ├── routes/
+│ │ └── main.js # Routes for pages and API endpoints
+│ └── data/
+│ └── posts.json # Blog post data
+│
+├── views/
+│ ├── layouts/
+│ │ └── main.ejs # Main layout
+│ ├── partials/
+│ │ ├── header.ejs
+│ │ ├── footer.ejs
+│ │ └── search.ejs
+│ ├── index.ejs # Home page
+│ ├── post.ejs # Single post view
+│ ├── add.ejs # Add post page
+│ └── edit.ejs # Edit post page
+│
+├── public/
+│ ├── css/
+│ │ └── style.css
+│ ├── js/
+│ │ └── script.js
+│ └── img/
+│ └── man-sunrise.jpg
+│
+├── app.js # Main Express server
+├── package.json
+└── README.md
+
+API Endpoints
+
+These endpoints can be tested using Postman:
+Method Endpoint Description
+GET /api/posts Get all posts
+GET /api/posts/:id Get a single post by ID
+POST /api/posts Create a new post
+PUT /api/posts/:id Update a post by ID
+DELETE /api/posts/:id Delete a post by ID
 
 ---
 
-##  Installation & Setup
+## Installation & Setup
 
 1. **Clone the repo:**
+
    ```bash
-   git clone https://github.com/Daniel-code-OrbitForge/simple-blog-express.git
+   git clone https://github.com/Daniel-code-OrbitForge/simple-blog-page.git
    cd simple-blog-page
 
+   ```
+
 2. **Install dependencies:**
+
    ```bash
    npm install "express, ejs, nodemon, express-ejs-layouts"
 
+   ```
+
 3. **Start the server:**
+
    ```bash
    node app.js
    (or using nodemon):
    npm run start
 
+   ```
+
 4. **Open in browser:**
+
 - http://localhost:3000/posts --> all posts
 - http://localhost:3000/post
 
@@ -58,25 +102,35 @@ simple-blog-page/ | |--- posts.json            # blog posts data (JSON, no DB)
 ## ROUTES
 
 - /posts ---> Get all posts
-- /post  ---> Get a single post by *ID*
+- /post ---> Get a single post by _ID_
 
 ## Contribution Guide
+
 - **Create a new branch for your fix:**
+
   ```bash
-  git checkout -b feature-or-fix/ 
+  git checkout -b feature-or-fix/
   your-feature-or-fix-name
 
+  ```
+
 - **Stage & Commit your changes:**
+
   ```bash
   git add .
   git commit -m "Describe your change/ fix"
 
+  ```
+
 - **Push to Github:**
+
   ```bash
   git push origin feature-or-fix/
   your-feature-or-fix-name
 
-- **Open a *Pull Request (PR)* for review and merging.**
+  ```
+
+- **Open a _Pull Request (PR)_ for review and merging.**
 
 ## Team Notes
 
@@ -86,4 +140,5 @@ simple-blog-page/ | |--- posts.json            # blog posts data (JSON, no DB)
 - Let's get this guys!..
 
 # License
+
 **This project is for educational purposes only.**
