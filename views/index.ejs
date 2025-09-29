@@ -1,0 +1,44 @@
+<!-- Main view that renders the homepage of blog -->
+<div class="author">
+  <h1 class="author_heading">Hi TechCrush Bloggers</h1>
+  <p class="author_body">Every News In Your Palm</p>
+</div>
+
+<img
+  src="/img/man-sunrise.jpg"
+  alt="looking at the sunrise"
+  class="author_image"
+  width="981"
+  height="528"
+/>
+
+<section class="articles">
+  <h2 class="articles__heading">Latest Posts</h2>
+
+  <ul class="article-ul">
+    <% if (posts && posts.length > 0) { %> <% posts.forEach(post => { %>
+    <li>
+      <a href="/post/<%= post.id %>">
+        <span><%= post.title %></span>
+        <span class="article-list_date">
+          <%= post.createdAt ? new Date(post.createdAt).toLocaleDateString() :
+          "" %>
+        </span>
+      </a>
+
+      <!-- Edit & Delete Button Links -->
+      <div class="post-actions">
+        <a href="/edit/<%= post.id %>" class="edit-link">[Edit]</a>
+        <form action="/delete/<%= post.id %>" method="POST" class="inline-form">
+          <button type="submit" class="delete-link">[Delete]</button>
+        </form>
+      </div>
+    </li>
+    <% }) %> <% } else { %>
+    <li>No posts yet. Be the first to add one!</li>
+    <% } %>
+  </ul>
+
+  <a href="/add" class="pagination">&lt; Add New Post</a>
+  <a href="#" class="pagination">&lt; View Past Posts</a>
+</section>
