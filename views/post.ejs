@@ -1,29 +1,25 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Post</title>
-  <link rel="stylesheet" href="/style.css">
-</head>
-<body>
-  <header>
-    <h1>Simple Blog</h1>
-    <nav><a href="/posts">All Posts</a></nav>
-  </header>
+<!-- From main view that renders a single blog post -->
+<div class="author">
+  <h1 class="author_heading"><%= post.title %></h1>
+  <p class="author_body">
+    Posted on <%= new Date(post.createdAt).toLocaleDateString() %>
+  </p>
+</div>
 
-  <main>
-    <article>
-      <h2>Setting up Middleware in Express</h2>
-      <p><small>By  Odidika Somto Anthony on 27/09/2025</small></p>
-      <p>Middleware functions are functions that have access to the request object</p>
-    </article>
-    <a href="/posts"> Back to Posts</a>
-  </main>
+<img
+  src="/img/man-sunrise.jpg"
+  alt="post image"
+  class="author_image"
+  width="981"
+  height="528"
+/>
 
-  <footer>
-    <p>&copy; 2025 Simple Blog Project</p>
-  </footer>
-</body>
-</html>
-=======
->>>>>>> ec2a321c5bcd6c1f59f65eb4df97a20488b43773
+<section class="articles">
+  <h2 class="articles__heading">Post Details</h2>
+
+  <article class="article-detail">
+    <p><%= post.body %></p>
+  </article>
+
+  <a href="/" class="btn-back">← Back to Posts</a>
+</section>

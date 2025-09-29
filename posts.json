@@ -12,51 +12,5 @@
         "author":"Harrison Daniel",
         "date":"25-09-2025",
         "content": "EJS lets you embed Javascript into HTML for dynamic rendering..."
-        
-    },
-
-    {
-        "id": 8,
-        "title": "Setting up Middleware in Express",
-        "author": "Odidika Somto Anthony",
-        "date":"27-09-2025",
-        "content": "Middleware functions are functions that have access to the request object..."
-    },
-    {
-        "id": 3,
-        "title": "ExpressJs and Third-party Modules",
-        "author":"Olukayode Feyi",
-        "date":"27-09-2025",
-        "content": "Third party modules are a great way to extend the functionality of your Express applications..."
-    },
-        {
-        "id": 4,
-        "title": "Modules and Middleware in ExpressJs",
-        "author":"Olukayode Feyi",
-        "date":"27-09-2025",
-        "content": "Middleware functions are a crucial part of Express applications..."
-    },
-    {
-        "id": 5,
-        "title": "Importance Of Modules Documentation",
-        "author":"Olukayode Feyi",
-        "date":"27-09-2025",
-        "content": "Third party modules documentations helps a developer understand how to use them effectively..."
-    },
-    {
-        "id": 6,
-        "title": "Web API's and ExpressJs",
-        "author":"Olukayode Feyi",
-        "date":"27-09-2025",
-        "content": "Web APIs are a crucial part of modern web applications, allowing for seamless communication between different services..."
-    },
-    {
-        "id": 7,
-        "title": "New Features in ES6",
-        "author":"Olukayode Feyi",
-        "date":"27-09-2025",
-        "content": "ES6 introduced several new features that make JavaScript more powerful and easier to work with..."
     }
-
-    
 ]
