@@ -4,7 +4,7 @@
         "title": "Setting up Middleware in Express",
         "author": "Odidika Somto Anthony",
         "date":"02-10-2025",
-        "content": "Middleware functions are functions that have access to the request object..."
+        "content": "Middleware functions are functions that have access to the request object.."
     },
 
     {
@@ -12,7 +12,7 @@
         "title": "Routing in Express",
         "author": "Olukayode Feyisike Pelumi",
         "date":"29-09-2025",
-        "content": "Routing refers to how an application’s endpoints (URIs) respond to client requests..."
+        "content": "Routing refers to how an application’s endpoints (URIs) respond to client requests.."
     },
 
     {
@@ -20,7 +20,7 @@
         "title": "Using Template Engines with Express",
         "author": "Francis Egbuleze",
         "date":"29-09-2025",
-        "content": "Template engines allow you to use static template files in your application..."
+        "content": "Template engines allow you to use static template files in your application.."
     },
 
     {
@@ -28,7 +28,7 @@
         "title": "Serving Static Files in Express",
         "author": "Frederick Baafi",
         "date":"30-09-2025",
-        "content": "Express makes it easy to serve static files such as images, CSS files, and JavaScript files..."
+        "content": "Express makes it easy to serve static files such as images, CSS files, and JavaScript files.."
     },
 
     {
