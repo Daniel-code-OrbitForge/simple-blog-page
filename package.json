@@ -2,17 +2,18 @@
   "name": "simple-blog-page",
   "version": "1.0.0",
   "description": "creating a simple blog page using express and ejs",
-  "main": "app.js",
-  "type": "module",
+  "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
   },
   "keywords": [],
   "author": "Group Three/Backend Dev. Cohort 3",
   "license": "ISC",
   "dependencies": {
     "date-fns": "^4.1.0",
+    "dotenv": "^17.2.2",
     "ejs": "^3.1.10",
     "express": "^5.1.0",
     "express-ejs-layouts": "^2.5.1",
