@@ -1,0 +1,25 @@
+<!-- From main view that renders a single blog post -->
+<div class="author">
+  <h1 class="author_heading"><%= post.title %></h1>
+  <p class="author_body">
+    Posted on <%= new Date(post.createdAt).toLocaleDateString() %>
+  </p>
+</div>
+
+<img
+  src="/img/man-sunrise.jpg"
+  alt="post image"
+  class="author_image"
+  width="981"
+  height="528"
+/>
+
+<section class="articles">
+  <h2 class="articles__heading">Post Details</h2>
+
+  <article class="article-detail">
+    <p><%= post.body %></p>
+  </article>
+
+  <a href="/" class="btn-back">← Back to Posts</a>
+</section>
