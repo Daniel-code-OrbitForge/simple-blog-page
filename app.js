@@ -1,42 +1,26 @@
-// main entry
-import express from 'express';
-import path from 'path';
-import { fileURLToPath } from 'url';
-import postRoutes from './routes/posts.js';
+require("dotenv").config();
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-
+const express = require("express");
+const expressLayout = require("express-ejs-layouts");
 
 const app = express();
-// Setting up our PORT variable
-const PORT = process.env.PORT || 3000;
-const hostName = '127.0.0.1';
+const PORT = 5000 || process.env.PORT;
 
-import expressLayouts from 'express-ejs-layouts';
-app.use(expressLayouts);
+// Middleware for parsing form data and JSON
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
-// Setting EJS as Our view engine
+// To serve static files via public folder
+app.use(express.static("public"));
+
+// To use Express EJS Layouts as middleware
+app.use(expressLayout);
+app.set("layout", "./layouts/main");
 app.set("view engine", "ejs");
-app.set("views", path.join(__dirname, "views"));
 
-// Setting up our middleware for static files
-app.use(express.static(path.join(__dirname, "public")));
+// Router Middleware for main routes
+app.use("/", require("./server/routes/main"));
 
-// Setting up our ROUTER === Routes ===
-app.use("/posts", postRoutes);
-
-// Rendering the Home page view
-app.get('/', function(req, res){
-    res.render("home");
-});
-// Home redirect
-app.get('/', (req, res) =>{
-    res.redirect("/posts");
-});
-
-// Setting up our server
-
-app.listen(PORT, () =>{
-    console.log(`Congrats, Server running at http://${hostName}:${PORT}/`);
-
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
