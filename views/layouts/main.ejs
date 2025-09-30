@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Blog Page | Group Three</title>
+</head>
+<body>
+
+  <!-- Header partial -->
+  <%- include('../partials/header') %>
+
+  <h1>Welcome to Simple Blog Page!</h1>
+
+  <ul>
+    <!-- Example dynamic list of posts -->
+    <% if (posts && posts.length > 0) { %>
+      <% posts.forEach(post => { %>
+        <li>
+          <a href="/posts/<%= post.id %>"><%= post.title %></a>
+        </li>
+      <% }) %>
+    <% } else { %>
+      <li>No blog posts yet.</li>
+    <% } %>
+  </ul>
+
+  <!-- Footer partial -->
+  <%- include('../partials/footer') %>
+
+</body>
+</html>
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Blog Page | Group Three</title>
+</head>
+<body>
+    <%= include('../partials/header')%>>
+    <h1>Welcome to Simple Blog Page!</h1>
+    <ul>
+        <!--list of blog posts here-->
+    </ul>
+    <%= include('../partials/footer')%>
+</body>
+</html> -->
