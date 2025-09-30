@@ -54,4 +54,17 @@ router.get("/posts/:id", (req, res) => {
   res.render("post", { title: post.title, post });
 });
 
+router.get("/posts/:id/edit", (req, res) => {
+  const posts = getPosts();
+  const post = posts.find(p => p.id === req.params.id);
+
+  if (!post) {
+    return res
+      .status(404)
+      .render("error", { title: "Error", message: "Post not found" });
+  }
+
+  res.render("edit", { title: "Edit Post", post });
+});
+
 module.exports = router;
