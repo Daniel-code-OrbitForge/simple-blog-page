@@ -7,7 +7,7 @@ const postModel = require("../models/postModel");
 router.get("/", async (req, res) => {
   const posts = await postModel.getAllPosts();
   const locals = {
-    title: "Fischers Blog",
+    title: "Simple Blog",
     description: "Simple blog built with Node, Express & EJS",
   };
   res.render("index", { locals, posts });
@@ -16,8 +16,8 @@ router.get("/", async (req, res) => {
 // About Page
 router.get("/about", (req, res) => {
   const locals = {
-    title: "About - Fischers Blog",
-    description: "Learn more about Fischers Blog",
+    title: "About - Simple Blog",
+    description: "Learn more about Simple Blog",
   };
   res.render("about", { locals });
 });
@@ -25,8 +25,8 @@ router.get("/about", (req, res) => {
 // Contact Page
 router.get("/contact", (req, res) => {
   const locals = {
-    title: "Contact - Fischers Blog",
-    description: "Get in touch with Fischers Blog",
+    title: "Contact - Simple Blog",
+    description: "Get in touch with Simple Blog Team",
   };
   res.render("contact", { locals });
 });

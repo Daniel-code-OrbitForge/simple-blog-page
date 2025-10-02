@@ -105,21 +105,20 @@ Method Endpoint Description
    ```bash
    node app.js
    (or using nodemon):
-   npm run start
+   npm run dev
 
    ```
 
 4. **Open in browser:**
 
 - http://localhost:5000/posts --> all posts
-- http://localhost:5000/post
 
 ---
 
 ## ROUTES
 
 - /posts ---> Get all posts
-- /post ---> Get a single post by _ID_
+- /posts/id ---> Get a single post by _ID_
 
 ## Contribution Guide
 
