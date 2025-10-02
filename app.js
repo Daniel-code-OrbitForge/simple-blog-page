@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // main entry
 import express from 'express';
 import path from 'path';
@@ -12,21 +13,35 @@ const PORT = 3000;
 
 import expressLayouts from 'express-ejs-layouts';
 app.use(expressLayouts);
+=======
+require("dotenv").config();
 
-// Setting EJS as Our view engine
+const express = require("express");
+const expressLayout = require("express-ejs-layouts");
+
+const app = express();
+const PORT = 5000 || process.env.PORT;
+
+// Middleware for parsing form data and JSON
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+>>>>>>> 55c039c3387d65d2a03ef3a06e846877a42f6901
+
+// To serve static files via public folder
+app.use(express.static("public"));
+
+// To use Express EJS Layouts as middleware
+app.use(expressLayout);
+app.set("layout", "./layouts/main");
 app.set("view engine", "ejs");
-app.set("views", path.join(__dirname, "views"));
 
-// Setting up our middleware for static files
-app.use(express.static(path.join(__dirname, "public")));
+// Router Middleware for main routes
+app.use("/", require("./server/routes/main"));
 
-// Setting up our ROUTER === Routes ===
-app.use("/posts", postRoutes);
-
-// Home redirect
-app.get('/', (req, res) =>{
-    res.redirect("/posts");
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
+<<<<<<< HEAD
 
 // Setting up our server
 
@@ -34,3 +49,5 @@ app.listen(PORT, () =>{
     console.log(`Congrats, Server running at http://localhost:${PORT}`);
 
 });
+=======
+>>>>>>> 55c039c3387d65d2a03ef3a06e846877a42f6901

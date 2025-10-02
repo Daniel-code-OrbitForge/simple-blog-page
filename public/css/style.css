@@ -1,0 +1,452 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap");
+
+:root {
+  --black: #1c1c1c;
+  --gray: #7e7e7e;
+  --light-gray: #e6e6e6;
+  --red: #b30000;
+  --font-size-base: 1rem;
+  --font-size-md: clamp(1.25rem, 0.61vw, 1.1rem, 1.58rem);
+  --font-size-lg: clamp(1.56rem, 1vw, 1.31rem, 2.11rem);
+  --font-size-xl: clamp(2.44rem, 2.38vw, 1.85rem, 3.75rem);
+  --border-radius: 10px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--black);
+  font-size: var(--font-size-base);
+  background-color: #faf5ee;
+  background-image: url("/img/img-noise.png");
+  margin: 0;
+}
+
+/* For links and headings */
+a {
+  color: var(--black);
+}
+h1 {
+  font-size: var(--font-size-xl);
+}
+h2 {
+  font-size: var(--font-size-lg);
+}
+h3 {
+  font-size: var(--font-size-md);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+select,
+textarea {
+  font-family: Poppins, sans-serif;
+  font-size: var(--font-size-base);
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.7rem 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  background-color: var(--black);
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.btn-delete {
+  padding: 10px 16px;
+  background-color: var(--red);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Layout */
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main {
+  padding: 20px 0;
+}
+
+/* author image class from index.ejs */
+.author_image {
+  max-height: 528px;
+  filter: drop-shadow(0px 44px 34px rgba(0, 0, 0, 0.25));
+  overflow: hidden;
+  border-radius: var(--border-radius);
+}
+
+/* Main Header */
+.header {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  padding: 10px;
+  grid-template-areas:
+    "logo button"
+    "menu menu";
+}
+
+/* For tablets and above */
+@media only screen and (min-width: 768px) {
+  .header {
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "logo menu button";
+  }
+}
+
+.header_logo {
+  grid-area: logo;
+  font-size: 25px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.header_logo:hover {
+  text-decoration: underline;
+}
+
+.header_nav {
+  grid-area: menu;
+  display: flex;
+  justify-content: center;
+}
+
+.header_button {
+  grid-area: button;
+  display: flex;
+  justify-content: end;
+}
+
+.header_button button {
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+  border: 0;
+  padding: 6px 12px;
+  border-radius: var(--border-radius);
+  border: 2px solid transparent;
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  color: var(--black);
+}
+
+.header_button button:hover {
+  border: 2px solid var(--black);
+}
+
+.header_nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+  font-weight: 600;
+  padding: 0;
+}
+
+.header_nav ul a {
+  padding: 10px;
+  text-decoration: none;
+}
+
+.header_nav ul a:hover {
+  text-decoration: underline;
+}
+
+.header_nav ul .active {
+  color: var(--gray);
+}
+
+.author {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.author_heading {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.author_body {
+  font-size: var(--font-size-md);
+  margin: 5px 0 40px 0;
+}
+
+/* Home  Articles Section */
+.article_heading {
+  margin-top: 4rem;
+  font-weight: 400;
+}
+
+.article-ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);
+  display: flex;
+  flex-direction: column;
+}
+
+.article-list_date {
+  font-size: var(--font-size-base);
+  color: var(--gray);
+  width: 260%;
+  display: inline-block;
+}
+
+.article-ul li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-decoration: none;
+  margin: 18px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .article-ul li a {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.article-list_date {
+  text-align: right;
+}
+
+.article-ul li {
+  font-size: 24px;
+  cursor: pointer;
+  transition: filter 0.1s;
+}
+
+.article-ul li:not(:last-child) {
+  border-bottom: 1px solid var(--light-gray);
+  padding-bottom: 18px;
+}
+
+.article-ul li:hover {
+  filter: none;
+}
+
+.article-ul:hover {
+  filter: blur(1px);
+}
+
+.article-ul:hover li:hover {
+  filter: none;
+}
+
+.pagination {
+  font-size: 1.3rem;
+  color: var(--gray);
+  text-decoration: none;
+  margin-top: 40px;
+  display: inline-block;
+}
+
+.pagination:hover {
+  color: var(--black);
+}
+
+.article {
+  white-space: pre-wrap;
+}
+
+/* Footer */
+.site-footer {
+    background: #343a40;
+    color: white;
+    margin-top: 4rem;
+    padding: 3rem 0 1rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-section h3 {
+    margin-bottom: 1rem;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section a {
+    color: #adb5bd;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid #495057;
+    color: #adb5bd;
+}
+
+/* Search Bar */
+.searchBar {
+  visibility: hidden;
+  transform: translateY(-100px);
+  background-color: var(--black);
+  flex-direction: column;
+  padding: 4px 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.searchBar.open {
+  transform: translateY(0);
+  transition: transform 0.1s;
+}
+
+.searchBar input {
+  margin: 0;
+  padding: 0;
+  flex:1;
+  padding:0.75rem;
+  border :1px solid(var(var(--red)));
+  font: size 1rem;
+
+}
+
+#searchClose {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: var(--light-gray);
+  padding: 15px;
+}
+
+/* Dashboard Admin */
+.admin-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-posts {
+  padding: 0;
+  margin: 0;
+}
+
+.admin-post-controls form {
+  display: inline-block;
+}
+
+.admin-post-controls .btn {
+  display: inline-block;
+  background-color: var(--black);
+  color: var(--gray-light);
+  border: 0;
+  text-decoration: none;
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  line-height: 2;
+}
+
+.admin-posts li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+/* Form and modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: var(--border-radius);
+  text-align: center;
+}
+
+.btn-cancel {
+  background: gray;
+  color: white;
+  padding: 10px 16px;
+  margin-left: 10px;
+  border: none;
+  cursor: pointer;
+}
+.btn-cancel:hover {
+  background: darkgray;
+}
+
+/* For Edit and Delete buttons on post.ejs */
+/* Positioning */
+.post-actions {
+  display: flex;
+  justify-content: flex-end; /* place them at the right edge */
+  align-items: center;
+  gap: 12px; /* spacing between edit & delete */
+  margin-top: 4px; /* bring closer to the post */
+}
+
+/* Edit link */
+.edit-link {
+  color: blue;
+  text-decoration: none; /* remove underline */
+  font-size: 0.95rem; /* medium text size */
+  cursor: pointer;
+}
+
+.edit-link:hover {
+  text-decoration: underline; /* underline on hover */
+}
+
+/* Delete link */
+.delete-link {
+  color: red;
+  background: none; /* remove button background */
+  border: none; /* remove border */
+  font-size: 0.95rem; /* medium text size */
+  cursor: pointer;
+  padding: 0; /* remove default padding */
+}
+
+.delete-link:hover {
+  text-decoration: underline; /* underline on hover */
+}
+
+/* Optional: tighten spacing between posts */
+.article-ul li {
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+  list-style: none;
+}

@@ -1,0 +1,19 @@
+<div class="author">
+  <h1 class="author_heading">Edit Post</h1>
+  <p class="author_body">Update your post details below</p>
+</div>
+
+<section class="articles">
+  <form action="/edit/<%= post.id %>" method="POST" class="form-post">
+    <label>Title:</label>
+    <input type="text" name="title" value="<%= post.title %>" required />
+
+    <label>Author:</label>
+    <input type="text" name="author" value="<%= post.author %>" required />
+
+    <label>Body:</label>
+    <textarea name="body" required><%= post.body %></textarea>
+
+    <button type="submit" class="btn-submit">Update Post</button>
+  </form>
+</section>

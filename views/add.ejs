@@ -1,0 +1,19 @@
+<div class="author">
+  <h1 class="author_heading">Add New Post</h1>
+  <p class="author_body">Share your thoughts with the community</p>
+</div>
+
+<section class="articles">
+  <form action="/add" method="POST" class="form-post">
+    <label>Title:</label>
+    <input type="text" name="title" required />
+
+    <label>Author:</label>
+    <input type="text" name="author" required />
+
+    <label>Body:</label>
+    <textarea name="body" required></textarea>
+
+    <button type="submit" class="btn-submit">Save Post</button>
+  </form>
+</section>
