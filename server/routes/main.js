@@ -1,26 +1,19 @@
+// server/routes/main.js
 const express = require("express");
-
-// Creating an Express router object
 const router = express.Router();
-
-// Importing the post model for data operations
 const postModel = require("../models/postModel");
 
-// ------------------ ROUTES ------------------ //
-
-// Home Page - Show all posts
-// @route  GET /
+// Home Page (list posts)
 router.get("/", async (req, res) => {
   const posts = await postModel.getAllPosts();
   const locals = {
     title: "Simple Blog",
-    description: "Simple blog built with Node, Express & EJS by Group 3",
+    description: "Simple blog built with Node, Express & EJS",
   };
   res.render("index", { locals, posts });
 });
 
-// The About Page
-// @route  GET /about
+// About Page
 router.get("/about", (req, res) => {
   const locals = {
     title: "About - Simple Blog",
@@ -29,45 +22,49 @@ router.get("/about", (req, res) => {
   res.render("about", { locals });
 });
 
-// The Contact Page
-// @route  GET /contact
+// Contact Page
 router.get("/contact", (req, res) => {
   const locals = {
     title: "Contact - Simple Blog",
-    description: "Get in touch with Simple Blog",
+    description: "Get in touch with Simple Blog Team",
   };
   res.render("contact", { locals });
 });
 
-// The Add Post Page (form)
-// @route  GET /add
-router.get("/add", (req, res) => {
-  res.render("add", { title: "Add New Post" });
-});
-
-// Function to View Single Post
-// @route  GET /posts/:id
+// View Single Post
 router.get("/post/:id", async (req, res) => {
   const post = await postModel.getPostById(req.params.id);
   if (!post) return res.status(404).send("Post not found");
   res.render("post", { post });
 });
 
-// Edit Post
+// Add Post (form)
+router.get("/add", (req, res) => {
+  res.render("add");
+});
+
+// Handle Add Post (POST)
+router.post("/add", async (req, res) => {
+  const { title, body, author } = req.body;
+  await postModel.addPost({ title, body, author });
+  res.redirect("/");
+});
+
+// Edit Post (form)
 router.get("/edit/:id", async (req, res) => {
   const post = await postModel.getPostById(req.params.id);
   if (!post) return res.status(404).send("Post not found");
   res.render("edit", { post });
 });
 
-// Handle Edit Post
+// Handle Edit Post (POST)
 router.post("/edit/:id", async (req, res) => {
   const { title, body, author } = req.body;
   await postModel.updatePost(req.params.id, { title, body, author });
   res.redirect("/");
 });
 
-// Handle Delete Post
+// Delete Post
 router.post("/delete/:id", async (req, res) => {
   await postModel.deletePost(req.params.id);
   res.redirect("/");
@@ -75,6 +72,7 @@ router.post("/delete/:id", async (req, res) => {
 
 /* =====================================================
    API Routes for CRUD operations and API testing
+   (These can be tested via Postman or similar tools)
    ================================================== */
 // Get all posts
 router.get("/api/posts", async (req, res) => {

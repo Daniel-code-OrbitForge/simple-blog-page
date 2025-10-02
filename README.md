@@ -20,6 +20,7 @@ This project is for learning Express routing, EJS rendering, modular code struct
 
 ## Project Structure
 
+```
 Simple-blog-page/
 │
 ├── server/
@@ -53,16 +54,32 @@ Simple-blog-page/
 ├── app.js # Main Express server
 ├── package.json
 └── README.md
+```
 
 API Endpoints
 
 These endpoints can be tested using Postman:
 Method Endpoint Description
-GET /api/posts Get all posts
-GET /api/posts/:id Get a single post by ID
-POST /api/posts Create a new post
-PUT /api/posts/:id Update a post by ID
-DELETE /api/posts/:id Delete a post by ID
+
+### Get all post (GET)
+
+`http://localhost:5000/api/posts/api/posts `
+
+### Get single post by id (GET)
+
+`/api/posts/:id `
+
+### Create a new post (POST)
+
+`/api/posts `
+
+### Update a post by id (PUT)
+
+`/api/posts/:id `
+
+### Delete post by id (DELETE)
+
+`/api/posts/:id `
 
 ---
 
@@ -88,21 +105,20 @@ DELETE /api/posts/:id Delete a post by ID
    ```bash
    node app.js
    (or using nodemon):
-   npm run start
+   npm run dev
 
    ```
 
 4. **Open in browser:**
 
-- http://localhost:3000/posts --> all posts
-- http://localhost:3000/post
+- http://localhost:5000/posts --> all posts
 
 ---
 
 ## ROUTES
 
 - /posts ---> Get all posts
-- /post ---> Get a single post by _ID_
+- /posts/id ---> Get a single post by _ID_
 
 ## Contribution Guide
 
@@ -134,7 +150,7 @@ DELETE /api/posts/:id Delete a post by ID
 
 ## Team Notes
 
-- Minimum of 20 posts should be added to post.json
+- Minimum of 10 posts should be added to post.json
 - Everyone should commit at least once (you can even edit this README.md file and commit, or edits and fixes, etc.)
 - Snitching is allowed if someone doesn't contribute
 - Let's get this guys!..

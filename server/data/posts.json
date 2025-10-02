@@ -1,81 +1,81 @@
 [
-    {
-        "id": 1,
-        "title": "Setting up Middleware in Express",
-        "author": "Odidika Somto Anthony",
-        "date":"02-10-2025",
-        "content": "Middleware functions are functions that have access to the request object.."
-    },
-
-    {
-        "id": 2,
-        "title": "Routing in Express",
-        "author": "Olukayode Feyisike Pelumi",
-        "date":"29-09-2025",
-        "content": "Routing refers to how an application’s endpoints (URIs) respond to client requests.."
-    },
-
-    {
-        "id": 3,
-        "title": "Using Template Engines with Express",
-        "author": "Francis Egbuleze",
-        "date":"29-09-2025",
-        "content": "Template engines allow you to use static template files in your application.."
-    },
-
-    {
-        "id": 4,
-        "title": "Serving Static Files in Express",
-        "author": "Frederick Baafi",
-        "date":"30-09-2025",
-        "content": "Express makes it easy to serve static files such as images, CSS files, and JavaScript files.."
-    },
-
-    {
-        "id": 5,
-        "title": "Working with Databases in Express",
-        "author": "Harrison Daniel Chinomso",
-        "date":"01-10-2025",
-        "content": "Integrating a database into your Express application allows you to store and retrieve data..."
-    },
-
-    {
-        "id": 6,
-        "title": "Authentication and Authorization in Express",
-        "author": "Onigbinde Joshua Oluwafenwa",
-        "date":"02-10-2025",
-        "content": "Implementing authentication and authorization is crucial for securing your application..."
-    },
-
-    {
-        "id": 7,
-        "title": "Deploying Express Applications",
-        "author": "Agu Michael Uche",
-        "date":"29-09-2025",
-        "content": "Once your Express application is ready, the next step is to deploy it to a server..."
-    },
-
-    {
-        "id": 8,
-        "title": "Performance Optimization in Express",
-        "author": "Omijori Muiz Ayomide",
-        "date":"29-09-2025",
-        "content": "Optimizing the performance of your Express application can lead to faster response times..."
-    },
-
-    {
-        "id": 9,
-        "title": "Testing Express Applications",
-        "author": "Mungathia Nancy Karimi",
-        "date":"29-09-2025",
-        "content": "Testing is an essential part of the development process to ensure your application works as expected..."
-    },
-
-    {
-        "id": 10,
-        "title": "Securing Express Applications",
-        "author": "Elimuyah Odinekachukwu",
-        "date":"29-09-2025",
-        "content": "Security is a critical aspect of web application development.."
-    }
+  {
+    "id": 1,
+    "title": "Setting up Middleware in Express",
+    "author": "Odidika Somto Anthony",
+    "date": "02-10-2025",
+    "content": "Middleware functions are functions that have access to the request object.."
+  },
+  {
+    "id": 2,
+    "title": "Routing in Express",
+    "author": "Olukayode Feyisike Pelumi",
+    "date": "29-09-2025",
+    "content": "Routing refers to how an application’s endpoints (URIs) respond to client requests.."
+  },
+  {
+    "id": 3,
+    "title": "Using Template Engines with Express",
+    "author": "Francis Egbuleze",
+    "date": "29-09-2025",
+    "content": "Template engines allow you to use static template files in your application.."
+  },
+  {
+    "id": 4,
+    "title": "Serving Static Files in Express",
+    "author": "Frederick Baafi",
+    "date": "30-09-2025",
+    "content": "Express makes it easy to serve static files such as images, CSS files, and JavaScript files.."
+  },
+  {
+    "id": 5,
+    "title": "Working with Databases in Express",
+    "author": "Harrison Daniel Chinomso",
+    "date": "01-10-2025",
+    "content": "Integrating a database into your Express application allows you to store and retrieve data..."
+  },
+  {
+    "id": 6,
+    "title": "Authentication and Authorization in Express",
+    "author": "Onigbinde Joshua Oluwafenwa",
+    "date": "02-10-2025",
+    "content": "Implementing authentication and authorization is crucial for securing your application..."
+  },
+  {
+    "id": 7,
+    "title": "Deploying Express Applications",
+    "author": "Agu Michael Uche",
+    "date": "29-09-2025",
+    "content": "Once your Express application is ready, the next step is to deploy it to a server..."
+  },
+  {
+    "id": 8,
+    "title": "Performance Optimization in Express",
+    "author": "Omijori Muiz Ayomide",
+    "date": "29-09-2025",
+    "content": "Optimizing the performance of your Express application can lead to faster response times..."
+  },
+  {
+    "id": 9,
+    "title": "Testing Express Applications",
+    "author": "Mungathia Nancy Karimi",
+    "date": "29-09-2025",
+    "content": "Testing is an essential part of the development process to ensure your application works as expected...",
+    "body": "Kudos to everyone",
+    "updatedAt": "2025-10-02T02:48:46.552Z"
+  },
+  {
+    "id": 10,
+    "title": "Securing Express Applications",
+    "author": "Elimuyah Odinekachukwu",
+    "date": "29-09-2025",
+    "content": "Security is a critical aspect of web application development.."
+  },
+  {
+    "id": 11,
+    "title": "Congrats to Group 3",
+    "body": "Kudos to all members of group. Thumbs up",
+    "author": "Fred",
+    "createdAt": "2025-10-02T02:58:52.687Z"
+  }
 ]
