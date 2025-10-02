@@ -20,6 +20,7 @@ This project is for learning Express routing, EJS rendering, modular code struct
 
 ## Project Structure
 
+```
 Simple-blog-page/
 │
 ├── server/
@@ -53,6 +54,7 @@ Simple-blog-page/
 ├── app.js # Main Express server
 ├── package.json
 └── README.md
+```
 
 API Endpoints
 
