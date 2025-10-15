@@ -3,11 +3,19 @@
   "version": "1.0.0",
   "description": "creating a simple blog page using express and ejs",
 <<<<<<< HEAD
+<<<<<<< HEAD
   "main": "app.js",
   "type": "module",
   "scripts": {
     "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+=======
+  "main": "index.js",
+  "scripts": {
+    "start": "app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+>>>>>>> 55c039c3387d65d2a03ef3a06e846877a42f6901
 =======
   "main": "index.js",
   "scripts": {

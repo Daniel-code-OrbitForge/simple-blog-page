@@ -106,7 +106,13 @@ Method Endpoint Description
    node app.js
    (or using nodemon):
 <<<<<<< HEAD
+<<<<<<< HEAD
    npm run start
+=======
+   npm run dev
+
+   ```
+>>>>>>> 55c039c3387d65d2a03ef3a06e846877a42f6901
 =======
    npm run dev
 
